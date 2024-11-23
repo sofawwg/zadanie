@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Money Transfer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<h1>Money Transfer</h1>
+<body>
+    <p style="color: red; text-align: center;">{{ error }}</p>
+  <form action="/transfer" method="post">
+    <label for="user">Кому:</label>
+    <input type="text" id="user" name="user" required><br><br>
+    <label for="amount">Сумма:</label>
+    <input type="number" id="amount" name="amount" step="0.01" required><br><br>
+    <label for="from_currency">Валюта:</label>
+    <input type="text" id="from_currency" name="from_currency" required><br><br>
+    <label for="to_currency">Перевод к валюте:</label>
+    <input type="text" id="to_currency" name="to_currency" required><br><br>
+    <label for="comment">Комментарий:</label>
+    <input type="text" id="comment" name="comment"><br><br>
+
+    <button type="submit">Перевести</button>
+  </form>
+</body>
+</html>
