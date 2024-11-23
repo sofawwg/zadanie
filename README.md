@@ -1,3 +1,15 @@
+делали вместе с Анной Карпаевой, с её стороны был создан интерфейс и совершение перевода
+
+
+
+
+
+архитектура: 
+
+
+![image](https://github.com/user-attachments/assets/356b0145-4a2f-4def-9669-d9e21adc1b36)
+
+
 запускаем файл app.py
 ```python
 from flask import Flask, render_template, request, redirect, url_for
@@ -146,4 +158,3 @@ class ValuteConverterService:
 
 
 ```
-
